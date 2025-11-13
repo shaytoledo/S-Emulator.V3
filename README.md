@@ -51,4 +51,76 @@ It behaves like a complete programming environment: loading programs, expanding 
 - Expansion controls with live degree indicator  
 - Visualization of expanded instructions  
 
-##
+### ✨ Highlighting
+- Highlight all instructions referencing a selected variable  
+- Highlight all label references  
+
+### 🐞 Debugger
+- Step-by-step execution  
+- Current-line highlight  
+- Live variables (`x`, `z`, `y`) with change highlights  
+- Real-time cycle counter  
+- Jump + EXIT handling  
+
+### 🕒 Run History
+- View all previous runs  
+- Open any run state snapshot  
+- Re-run with identical inputs & settings  
+
+---
+
+# 🌐 3. Client–Server Platform
+
+## 🖥️ Server (Tomcat)
+REST endpoints:
+
+- Upload programs  
+- List programs & functions  
+- Execute program (architecture + degree)  
+- Credit deduction & validation  
+- Run history retrieval  
+- Connected users overview  
+
+## 💻 Client (JavaFX)
+- Login screen  
+- Live dashboard (users, programs, functions)  
+- XML upload  
+- Add credits  
+- Select: Program → Architecture → Degree → Run  
+- View results (`y`) and cycle count  
+- Per-user run history  
+
+---
+
+# 📂 4. XML Test Files
+
+The repository includes several XML test programs for:
+
+- Simple executions  
+- Heavy synthetic instruction expansion  
+- QUOTE & function composition  
+- Invalid programs (for error validation)  
+- Large scale performance tests  
+
+Usage:
+- GUI → FileChooser  
+- Server → Upload Endpoint  
+- Console → Path Input  
+
+---
+
+# 🧾 Summary
+
+**S-Emulator** is a fully integrated software system featuring:
+
+- 🔧 Generalized execution engine  
+- 📈 Multi-level synthetic expansion  
+- 🖥️ JavaFX front-end with debugging tools  
+- 🌐 Distributed Client–Server support  
+- 👤 User + credit management  
+- 🕒 Run history, validation, and program visualization  
+- 🧪 Comprehensive XML test file suite  
+
+It is a complete end-to-end platform combining logic, UI, networking, debugging, and program execution for the S-Language.
+
+---
